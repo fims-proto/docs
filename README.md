@@ -1,6 +1,8 @@
 # Fims Documentation
 
-A wiki site of prototype project `Fims`. [Link to the docs](https://fims-proto.github.io/documentations/).
+A wiki site of prototype project `Fims`.
+
+[Link to the docs](https://fims-proto.github.io/documentations/).
 
 ## How to contribute
 
