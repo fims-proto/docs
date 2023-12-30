@@ -1,0 +1,13 @@
+site_name: Fims Proto
+repo_url: https://github.com/fims-proto/fims-proto.github.io
+nav:
+  - index.md
+  - Modules Design:
+    - general_ledger.md
+    - report.md
+  - About: about.md
+theme:
+  name: material
+plugins:
+    - search
+    - mermaid2
