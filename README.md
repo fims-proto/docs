@@ -1,6 +1,6 @@
-# fims-proto.github.io
+# Fims Documentation
 
-A wiki site of prototype project `FIMS`.
+A wiki site of prototype project `Fims`.
 
 ## How to contribute
 
@@ -44,4 +44,14 @@ mkdocs serve
 
 ### Deploy the docs
 
-Commit the changes under `/docs` into `main` branch.
+Commit the changes of source file into `main` branch.
+
+Run command:
+
+``` shell
+mkdocs gh-deploy
+```
+
+`mkdocs` will generate site files in `/site` folder and push to `gh-pages` branch.
+
+Now the changes should be visible in github pages: <https://fims-proto.github.io/documentations/>
