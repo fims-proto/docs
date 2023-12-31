@@ -1,13 +1,35 @@
 site_name: Fims Proto
-repo_url: https://github.com/fims-proto/fims-proto.github.io
+repo_url: http://github.com/fims-proto/documentations
+
 nav:
-  - index.md
-  - Modules Design:
-    - general_ledger.md
-    - report.md
-  - About: about.md
+  - Home: "index.md"
+  - Backend:
+    - SoB:
+      - "backend/sob/index.md"
+      - Create SoB: "backend/sob/create_sob.md"
+    - General Ledger:
+      - "backend/general_ledger/index.md"
+      - Close Period: "backend/general_ledger/close_period.md"
+    - Report:
+      - "backend/report/index.md"
+      - Draft samples: "backend/report/samples.md"
+      - When to Save Report: "backend/report/save_report.md"
+  - About: "about.md"
+
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.path
+    - navigation.indexes
+    - navigation.sections
+
 plugins:
     - search
-    - mermaid2
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

@@ -1,16 +1,23 @@
 # General Ledger 总账 (WIP)
 
+总账模块, 隶属于一个账套(`SoB`), 包含了以下业务对象:
+
+- 科目(`account`)
+- 辅助核算类别(`auxiliary category`)
+- 辅助核算科目(`auxiliary account`)
+- 账期(`period`)
+- 账簿(`ledger`)
+- 辅助核算账簿(`auxiliary ledger`)
+- 记账凭证(`voucher`)
+
 ## Entities and Relations
 
-For diagram simplicity, `SoB` and `Period` are not connected with others:
+For diagram simplicity, `Period` are not connected with others:
 
 - All entities are logically belongs to a `SoB`
 - `Voucher` and `Ledger` are logically belongs to a `Period`
 
 ``` mermaid
----
-title: General Ledger ER
----
 erDiagram
     VOUCHER ||--|{ LINE_ITEM: "contains (at least 2)"
     LINE_ITEM }o--|| ACCOUNT: "placed in"
@@ -22,16 +29,6 @@ erDiagram
     
     ACCOUNT ||--|{ LEDGER: "records in"
     AUXILIARY_ACCOUNT ||--|{ AUXILIARY_LEDGER: "records in"
-    
-    SOB {
-        UUID id
-        string name
-        string description
-        string baseCurrency
-        int startingPeriodYear
-        int startingPeriodMonth
-        int[] accountsCodeLength
-    }
     
     ACCOUNT {
         UUID id

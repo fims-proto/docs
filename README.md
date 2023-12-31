@@ -6,37 +6,33 @@ A wiki site of prototype project `Fims`.
 
 ## How to contribute
 
-### Install `mkdocs` and others
+### 1. Install `mkdocs` and others
 
-Install `mkdocs`:
+#### 1.1. Install `mkdocs`
 
 ``` shell
 pip install mkdocs
 ```
 
-If pip is not found, consider export it:
+(If pip is not found, consider export it):
 
 ``` shell
 export PATH="$PATH:$HOME/Library/Python/3.9/bin"
 ```
 
-Install [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) theme:
+#### 1.2. Install [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) theme
 
 ``` shell
 pip install mkdocs-material
 ```
 
-Install plugin `mkdocs-mermaid2-plugin` to render [mermaid](https://mermaid.js.org):
+`mkdocs-material` integrates with [mermaid](https://mermaid.js.org) natively, no need to install `mkdocs-mermaid2-plugin` plugin.  
 
-``` shell
-pip install mkdocs-mermaid2-plugin
-```
-
-### Make your change in markdown files
+### 2. Make your change in markdown files
 
 For full documentation visit [mkdocs](https://www.mkdocs.org).
 
-### Verify locally
+### 3. Verify locally
 
 Run command to serve `mkdocs` locally:
 
@@ -44,7 +40,7 @@ Run command to serve `mkdocs` locally:
 mkdocs serve
 ```
 
-### Deploy the docs
+### 4. Deploy the docs
 
 Commit the changes of source file into `main` branch.
 
