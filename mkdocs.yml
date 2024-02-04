@@ -14,6 +14,10 @@ nav:
       - "backend/report/index.md"
       - Draft samples: "backend/report/samples.md"
       - When to Save Report: "backend/report/save_report.md"
+  - Go to Production:
+    - Todo List: "go_to_production/todos.md"
+  - Archived:
+    - Design: "archived/design.md"
   - About: "about.md"
 
 theme:
@@ -56,6 +60,7 @@ plugins:
     - search
 
 markdown_extensions:
+  - admonition
   - pymdownx.critic
   - pymdownx.tasklist:
       custom_checkbox: true
